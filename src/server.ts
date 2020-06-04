@@ -3,7 +3,7 @@ import routes from "./routes";
 import patch from "path";
 
 const app = express();
-
+app.use(express.json());
 app.use(routes);
 
 app.use("/uploads", express.static(patch.resolve(__dirname, "..", "uploads")));
