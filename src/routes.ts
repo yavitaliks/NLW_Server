@@ -9,5 +9,7 @@ const itenscontroller = new ItensController();
 routes.get("/itens", itenscontroller.index);
 
 routes.post("/points", pointController.create);
+routes.get("/points", pointController.index);
+routes.get("/points/:id", pointController.show);
 
 export default routes;
